@@ -1,4 +1,4 @@
-import java.lang.classfile.constantpool.StringEntry;
+package Obj_TV;
 
 public class SmartingTv{
     private String marca, modelo;

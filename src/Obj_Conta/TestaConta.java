@@ -1,0 +1,36 @@
+package Obj_Conta;
+
+public class TestaConta {
+    public void main(String arg[]){
+        Conta c1 = new Conta("João Silva", 525, 49165);
+        System.out.println(c1);
+
+        c1.depositar(500);
+
+        System.out.println(c1);
+
+        c1.sacar(200);
+
+        System.out.println(c1);
+
+        c1.encerrarConta();
+
+        c1.sacar(300);
+
+        c1.encerrarConta();
+
+        System.out.println(c1);
+
+
+        Conta c2 = new Conta("Maria Souza", 525, 98274);
+        System.out.println(c2);
+
+        c2.sacar(50);
+
+        System.out.println(c2);
+
+
+
+
+    }
+}

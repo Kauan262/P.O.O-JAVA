@@ -3,6 +3,7 @@ public class Produto {
     private String nome, descricao;
     private float preco;
 
+
     public Produto() {
     }
 

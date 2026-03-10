@@ -29,12 +29,20 @@ public class Pedido {
         this.data = data;
     }
 
-    public Cliente getCliente() {
-        return cliente;
+    public Cliente getCliente() {return cliente;
     }
 
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
+    }
+
+    @Override
+    public String toString() {
+        return "Pedido{" +
+                "id=" + id +
+                ", data=" + data +
+                ", cliente=\n   " + cliente +
+                '}';
     }
 }
 

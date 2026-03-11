@@ -9,7 +9,7 @@ public class TestaTodoParte   {
 
         Produto prod1 = new Produto(55,"Mouse", "Acessório para computador", 55);
 
-        ped1.adicionaItemProduto(55, 1, prod1);
+        ped1.adicionaItemPedido(55, 1, prod1);
         System.out.println(ped1.toString());
 
     }

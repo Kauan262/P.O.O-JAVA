@@ -1,12 +1,12 @@
-public class ItemProduto {
+public class ItemPedido {
     private int id;
     private int qtde;
     private Produto produto;
 
-    public ItemProduto() {
+    public ItemPedido() {
     }
 
-    public ItemProduto(int id, int qtde, Produto produto) {
+    public ItemPedido(int id, int qtde, Produto produto) {
         this.id = id;
         this.qtde = qtde;
         this.produto = produto;

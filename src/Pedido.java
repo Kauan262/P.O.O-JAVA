@@ -5,22 +5,22 @@ public class Pedido {
     private int id;
     private Date data;
     private Cliente cliente;
-    private ArrayList<ItemProduto> itemProduto;
+    private ArrayList<ItemPedido> itemPedido;
 
     public Pedido() {
-        this.itemProduto = new ArrayList<>(); //aloca espaço na memória para vetor
+        this.itemPedido = new ArrayList<>(); //aloca espaço na memória para vetor
     }
 
     public Pedido(int id, Date data, Cliente cliente) {
         this.id = id;
         this.data = data;
         this.cliente = cliente;
-        this.itemProduto = new ArrayList<>();
+        this.itemPedido = new ArrayList<>();
     }
 
-    public void adicionaItemProduto(int id, int qtde, Produto produto){
-        ItemProduto aux = new ItemProduto(id,qtde,produto);
-        this.itemProduto.add(aux);
+    public void adicionaItemPedido(int id, int qtde, Produto produto){
+        ItemPedido aux = new ItemPedido(id,qtde,produto);
+        this.itemPedido.add(aux);
     }
     public int getId() {
         return id;
@@ -51,7 +51,7 @@ public class Pedido {
                 "id=" + id +
                 ", data=" + data +
                 ", cliente=\n   " + cliente +
-                '}' + "iten" + itemProduto;
+                '}' + "iten" + itemPedido;
     }
 }
 

@@ -3,8 +3,8 @@ package Ex_Daniel.EX_Sistema_Gestao_Diciplina;
 import java.util.ArrayList;
 
 public class Avaliacao {
-    public int id;
-    public String nome;
+     int id;
+    private String nome;
     public ArrayList<Questao> questao;
 
     public Avaliacao(int id, String nome){
@@ -13,6 +13,7 @@ public class Avaliacao {
         questao = new ArrayList<>();
     }
     public void adicionarQuestao(int num, String texto, float peso){
-
+        Questao q = new Questao(num, texto, peso);
+        questao.add(q);
     }
 }

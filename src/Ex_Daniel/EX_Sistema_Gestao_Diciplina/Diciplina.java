@@ -3,8 +3,8 @@ package Ex_Daniel.EX_Sistema_Gestao_Diciplina;
 import java.util.ArrayList;
 
 public class Diciplina {
-    public int id;
-    public String nome;
+     int id;
+     public String nome;
     public String professor;
     ArrayList<Aluno> alunos;
     ArrayList<Avaliacao> avaliacoes;
@@ -19,5 +19,16 @@ public class Diciplina {
     void criarAvaliacao(int id, String nome){
         Avaliacao a = new Avaliacao(id, nome);
         avaliacoes.add(a);
+    }
+
+    @Override
+    public String toString() {
+        return "Diciplina{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", professor='" + professor + '\'' +
+                ", alunos=" + alunos +
+                ", avaliacoes=" + avaliacoes +
+                '}';
     }
 }

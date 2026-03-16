@@ -1,7 +1,7 @@
 package Obj_Conta;
 
 public class TestaConta {
-    public void main(String arg[]){
+    public static void main(String[] args){
         Conta c1 = new Conta("João Silva", 525, 49165);
         System.out.println(c1);
 
